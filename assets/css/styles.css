@@ -1,0 +1,141 @@
+
+:root{
+
+    /* COLORS */
+
+    /* Primary */
+    --green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark: hsl(0, 0%, 12%);
+    --off: hsl(0, 0%, 8%);
+
+    /* FONT */
+
+    --font: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--off);
+    font-size: 14px;
+    font-family: var(--font);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+}
+
+.card{
+    background-color: var(--dark);
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card__elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image{
+    border-radius: 50%;
+    width: 100px;
+    padding: 20px 0;
+}
+
+.card__elements h1{
+    color: var(--white);
+    padding:10px 0;
+    font-weight: 400;
+}
+
+.card__elements span{
+    color: var(--green);
+}
+
+.card__elements p{
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.card__btn-group{
+    width: 100%;
+}
+
+.card__btn-link{
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 14px 10px;
+    background-color: var(--grey);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    transition: all ease .5s;
+}
+
+.card__btn-link:hover{
+    background-color: var(--green);
+    color: var(--off);
+}
+
+.attribution{
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.attribution a { 
+    color: var(--green);
+    text-decoration: none;
+}
+
+@media screen and (min-width:480px){
+   
+    .card{
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width:768px){
+   
+    .card{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1140px){
+
+    .card{
+        width: 35%;
+    }
+}
+
+
